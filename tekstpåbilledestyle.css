@@ -1,0 +1,75 @@
+/* Øvelse: L2.7
+Lav en side med fire celler (et 2x2 grid)
+
+I første celle placerer du et billede med
+tekst ovenpå - brug grid.
+
+Gør det samme i celle 2, men prøv at
+bruge position denne gang,
+
+I celle tre skal du placere en div med en
+overskrift og en tekst ovenpå billedet.
+Brug grid.
+
+I den sidste celle placerer du et billede
+ovenpå et billede. Vælg selv hvilken
+metode du vil bruge. */
+img{
+    height: 100%;
+    width: 500px;
+}
+
+p{
+    font-size: 30px;
+}
+
+.container{
+    display:grid;
+
+    img{
+        grid-column: 1;
+        grid-row:1;
+    }
+
+    .text-overlay-grid{
+        grid-column: 1;
+        grid-row:1;
+    }
+}
+
+
+.container2{
+    position:relative;
+    width: 300px;
+}
+
+.text-overlay-position{
+    position:absolute;
+    top:5%;
+    left: 5%;
+}
+
+
+.container3{
+    display: grid;
+
+    img{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .overskrift-overlay-grid{
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+.container4{
+    position:relative;
+    width: 300px;
+}
+.billede-på-billede{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}

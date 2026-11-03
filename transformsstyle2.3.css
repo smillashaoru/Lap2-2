@@ -1,0 +1,60 @@
+/* /* Lav en side med 4 div'er 
+a) Første div skal vises på hovedet
+b) Anden div skal indeholde 2 billeder, hvor
+den ene er halv størrelse, og den anden er
+en halv gange større.
+Lad det lille billede være roteret 45 grader
+om sit venstre hjørne og det store 90
+grader om sit højre hjørne.
+c) Tredje div skal indeholde et billede med en
+ramme omkring, men billedet er flyttet ud til højre, 
+så det står præcis udenfor rammen.
+d) fyld noget tekst ind i den fjerde div og roter den 10 grader. ret kanterne op
+med skew, Ret evt. teksten op med skew i modsat retning. */
+
+
+img{
+    width:  500px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Alle billederne har en bredte på 500px, og en højde på auto, så de ikke bliver forvrænget. Object-fit: cover, gør at billedet fylder hele div'en ud, uden at blive forvrænget. */
+
+.shaorulogo1{
+    transform: rotate(180deg);
+}
+
+/* shaoru4 roteret 180grader */
+
+.shaorulogo2{
+    transform: scale(0.5);
+    transform: rotate(45deg)
+}
+
+/* shaoru4 skaleret til halvanden og roteret 45grader */
+.shaorulogo21{
+    transform: scale(1.5);
+    transform: rotate(90deg)
+}
+/* shaoru4 skaleret og roteret 90grader */
+
+.billede-container{
+    border: 5px solid rgb(186, 0, 0);
+width: 500px;
+}
+
+.shaorulogo3{
+    transform:translatex(50%);
+}
+
+/* shaoru4 flyttet 50% til en større x-værdi*/
+
+.tekst3{
+    transform:rotate(10deg);
+    transform: skew(100deg, deg);
+}
+
+/* skew: 
+skewX(00deg) skubber elementets punkter vandret i forhold til deres lodrette position.
+skewY(00deg) skubber elementets punkter lodret i forhold til deres vandrette position.*/

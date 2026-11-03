@@ -1,0 +1,44 @@
+/* Øvelse: L2.1
+Lav en webside med tre div'er.
+Giv hver div en bredde og højde på 300px.
+Sæt billeder (der er bredere end 300px) ind i
+div'erne.
+a)Få billedet i den første div til at fylde hele
+rammen.
+b) Sørg for at hele billedet er med i anden
+ramme.
+c) Få billedet i den tredje div til at fylde hele
+rammen og være placeret så billedets
+centrum er i rammens centrum. */
+
+
+section{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(186, 0, 0);
+}
+
+.shaorulogo1{
+    height: 100%;
+    width: 100%;
+ object-fit: cover;
+}
+
+.shaorulogo2{
+    height: 100%;
+    width: 100%;
+ object-fit: contain;
+}
+
+.shaorulogo3{
+    height: 100%;
+    width: 100%;
+ object-fit: cover;
+ object-position: 25%;  
+}

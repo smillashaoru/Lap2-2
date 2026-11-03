@@ -1,0 +1,49 @@
+/* Lav en webside med fem billeder i hver sin
+container. a)Lav et grid til billed-containerne. b)Juster dine billeder så de er lige store.
+c) Definer grid'ets kolonner så antallet justerer sig efter browservinduets bredde. */
+
+
+/* Øvelse: L2.9
+Lav en side med tre cards.
+a) På hvert card placeres en overskrift,
+et billede og nogle informationer.
+Foran nogle af informationerne skal
+der med et pseudoelement placeres
+en emoji.
+b) Med et pseudoelement og position
+tilføjes en kant på de tre cards. */
+
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+/* Koden gør griddet fleksibelt, så  billederne automatisk tilpasser sig 
+skærmens størrelse uden at blive smallere end 200 px. */
+
+
+.lokation::before{
+    content:"* "
+}
+/* ::before beskriver at der skal være noget før et html element. */
+/* content: "" beskriver hvad der skal være før elementet */
+
+.card {
+    position: relative;
+    background-color: rgb(127, 127, 127);
+}
+/* Elementet bliver et referencepunkt for andre elementer. */
+
+.card::after{
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background-color: rgb(207, 156, 2);
+}
+/* Elementet kan placeres præcist i forhold til sit nærmeste positionerede element. */
+
+/* relative = bestemmer referencepunktet.
+absolute = placerer elementet præcist i forhold til referencepunktet. */

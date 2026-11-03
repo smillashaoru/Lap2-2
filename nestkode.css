@@ -1,0 +1,78 @@
+/* Nesting i CSS betyder, at man skriver CSS-regler inde i andre CSS-regler.
+Det gør det muligt at samle styling af relaterede elementer, så koden bliver mere overskuelig. */
+
+div {
+background-color: #234;
+&:hover {
+background-color: rgb(226, 245, 88);
+
+p {
+color: #899;
+font-size: 1.2rem;
+}
+
+&:hover {
+background-color: rgb(226, 245, 88);
+}
+>div p {
+color: #899;
+font-size: 1.2rem;
+}
+}
+}
+
+
+
+nav {
+background-color: #263238;
+padding: 1rem;
+ul {
+display: flex;
+gap: 2rem;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+li {
+border-right: 1px solid #607d8b;
+padding-right: 2rem;
+}
+a {
+color: white;
+text-decoration: none;
+}
+
+&:a:hover {
+color: #80deea;
+}
+}
+
+
+.product-card{
+max-width: 350px;
+padding: 1.5rem;
+background: #f5f5f5;
+border: 1px solid #ccc;
+border-radius: 10px;
+
+h2 {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+}
+
+.price {
+color: #206040;
+font-weight: bold;
+}
+.button {
+padding: 0.7rem 1.2rem;
+background: #263238;
+color: white;
+border: none;
+cursor: pointer;
+}
+.product-card button:hover {
+background: #455a64;
+}
+}

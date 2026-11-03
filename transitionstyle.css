@@ -1,0 +1,85 @@
+/* Øvelse: L2.4
+Lav en webside
+med et grid med to
+kolonner og to
+rækker.
+
+I en celle placerer du et billede
+og når musen flyttes hen over
+billedet, flytter det sig lidt op og
+får en større skygge.
+
+I en celle placerer du et billede
+og når musen flyttes hen over
+billedet, roterer billedet 90
+grader.
+
+I en anden celle laver du en
+cirkulær form der er mørk, men
+lyser op, når musen står over
+den.
+
+I den sidste celle sætter du et
+billede, og når musen kører hen
+over det, aktiveres 3 filtre. */
+
+
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 0;
+}
+img{
+    height: 100%;
+    width:100%;
+}
+/* alle billedernes størrelse af angivet */
+
+.shaoru1{
+    box-shadow:08px 12px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.shaoru1:hover{
+    box-shadow: 100px 100px rgba(0, 0,0, 0.5);
+    transform:translateY(-30px);
+}
+/* shaoru1: 00px 00px, er x-værdi og y-værdi af hvor stor skyggen er. 
+rgba (0,0,0,0) de første værdier angiver farven. Den sidste angiver hvor tydelig skyggen er. 
+transforme: translateY(-30px), er hviken retning og hvor meget elementet flytter sig. 
+Y-aksen + minus værdi, elementet rykker sig op ad på interfacet.*/
+
+
+.shaoru3:hover{
+    transform: rotate(90deg);
+    transition: transform 0.6s;
+}
+
+/* shaoru3: roterer elementet 90 grad på x-aksen når cursoren holdes over elementet */
+
+
+.cirkel{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.cirkel:hover{
+    background-color: rgb(111, 111, 114);
+    transition: transform 0.3s;
+}
+
+/* Har givet div class="cirkel" en baggrundsfarve og en border-radius på 50% så den bliver rund.
+Ved hover har jeg givet den en anden baggrundsfarve */
+
+
+.shaoru4{
+    filter:none;
+}
+
+.shaoru4:hover{
+    filter: blur(5px) saturate(5) grayscale(100%);
+    transition: filter 0.3s;
+}
+
+/* jeg har givet shaoru4 3 forskellige filtre ved hover. */

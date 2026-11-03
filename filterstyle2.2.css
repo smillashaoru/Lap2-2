@@ -1,0 +1,113 @@
+.shaorulogo1, .shaorulogo2, .shaorulogo3, .shaorulogo4, .shaorulogo5, .shaorulogo6, .shaorulogo7, .shaorulogo8, .shaorulogo9, .shaorulogo10{
+    height: 100%;
+    width: 400px;
+}
+/* alle billedernes størrelse er valgt */
+
+p{
+margin-top: 0px;
+}
+
+
+
+/* Øvelse: L2.2
+Prøv filtrene.
+1. Lav en side med 10 kasser (fx div'er), der hver
+indeholder et billedudsnit.
+2. Sæt et forskelligt filter på hver kasse, så du
+har din egen lille reference over hvad de
+forskellige filtre gør.
+3. Adder en hover effekt på billedudsnittene,
+så filteret fjernes, når brugeren holder
+musen hen over billedet.
+4. Som en bonus-opgave kunne du lave nogle
+flere div'er, hvor du prøver at kombinere filtre. */
+
+.shaorulogo1{
+    filter:brightness(100);
+    transition: filter 0.3s;
+}
+ .shaorulogo1:hover {
+      filter: none;
+}
+/* Shaoru billedet har brightness 100%.
+Transition der tager 0.3s.
+Hover er der intet filter. */
+
+.shaorulogo2{
+ filter:contrast(200%);
+ transition: filter 0.3s;
+}
+.shaorulogo2:hover {
+  filter: none;
+}
+
+.shaorulogo3{
+    filter:saturate(1);
+    transition: filter 0.3s;
+}
+.shaorulogo3:hover{
+filter:none;
+}
+
+
+.shaorulogo4{
+  filter: grayscale(100%);
+  transition: filter 0.3s; 
+}
+.shaorulogo4:hover {
+  filter: none;
+}
+
+
+.shaorulogo5{
+    filter:sepia(100%);
+    transition: filter 0.3s;
+}
+.shaorulogo5:hover {
+  filter: none;
+}
+
+
+.shaorulogo6{
+    filter:invert(100%);
+    transition: filter 0.3s;
+}
+.shaorulogo6:hover {
+  filter: none;
+}
+
+.shaorulogo7{
+    filter:opacity(50%);  
+    transition: filter 0.3s;  
+}
+.shaorulogo7:hover {
+  filter: none;
+}
+
+
+.shaorulogo8{
+    filter:hue-rotate(90deg);
+    transition: filter 0.3s;
+}
+.shaorulogo8:hover {
+  filter: none;
+}
+
+
+.shaorulogo9{
+    filter:blur(5px);
+    transition: filter 0.3s;
+}
+.shaorulogo9:hover {
+  filter: none;
+}
+
+
+.shaorulogo10{
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+    transition: filter 0.3s;
+}   
+.shaorulogo10:hover {
+  filter: none;
+}

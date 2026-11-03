@@ -1,0 +1,81 @@
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.tatto {
+    transition: filter 0.3s;
+}
+.tatto:hover {
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+}
+
+
+.kenzo {
+    transition: filter 0.3s;
+}
+.kenzo:hover {
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+}
+
+
+.dover{
+    transition: filter 0.3s;
+}
+.dover:hover {
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+}
+
+
+.diesel{
+    transition: filter 0.3s;
+}
+.diesel:hover {
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+}
+
+
+.cphconcept1{
+    transition: filter 0.3s;
+}
+.cphconcept1:hover {
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+}
+
+
+.cphconcept{
+    transition: filter 0.3s;
+}
+.cphconcept:hover {
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+}
+
+.kalender{
+    transition: filter 0.3s;
+}
+.kalender:hover {
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+}
+
+
+.coldcultur{
+    transition: filter 0.3s;
+}
+.coldcultur:hover {
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+}
+
+.butik9090{
+    transition: filter 0.3s;
+}
+.butik9090:hover {
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+}
+
+
+.fr2{
+    transition: filter 0.3s;
+}
+.fr2:hover {
+    filter:drop-shadow(16px 16px 20px rgb(144, 75, 10));
+}
